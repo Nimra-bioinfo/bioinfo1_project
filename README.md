@@ -81,13 +81,13 @@ The repository is organized into modular scripts for clean execution and maintai
 ├── README.md                   # Full Documentation & Analytical Report
 ├── requirements.txt            # Python dependencies (biopython, requests, matplotlib)
 │
-├── 01_sequence_lengths.py      # Module 1: UniProt fetcher & sequence length analyzer
-└── 02_pairwise_alignment.py   # Module 2: Pairwise alignment & point mutation mapper
+├── 01_sequence_lengths.ipynb      # Module 1: UniProt fetcher & sequence length analyzer
+└── 02_pairwise_alignment.ipynb   # Module 2: Pairwise alignment & point mutation mapper
 ```
 
 ### A. Modular Breakdown
-* **`01_sequence_lengths.py`:** Focuses on dynamic ingestion, in-memory buffering using `io.StringIO`, and cross-species sequence length distribution profiling.
-* **`02_pairwise_alignment.py`:** Implements Biopython's `PairwiseAligner` to calculate normalized percent identity and extract position-specific point mutations.
+* **`01_sequence_lengths.ipynb`:** Focuses on dynamic ingestion, in-memory buffering using `io.StringIO`, and cross-species sequence length distribution profiling.
+* **`02_pairwise_alignment.ipynb`:** Implements Biopython's `PairwiseAligner` to calculate normalized percent identity and extract position-specific point mutations.
 
 ##  Conclusion & Future Directions
 
@@ -114,10 +114,10 @@ pip install biopython requests matplotlib
 
 * **Execute Sequence Length Analysis:**
   ```bash
-  python 01_sequence_lengths.py
+  python 01_sequence_lengths.ipynb
   ```
 
 * **Execute Global Pairwise Alignment & Mutation Tracker:**
   ```bash
-  python 02_pairwise_alignment.py
+  python 02_pairwise_alignment.ipynb
   ```
